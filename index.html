@@ -1,9 +1,19 @@
-<!doctype html>
 <html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
-  <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-  </body>
+	<head>
+	<link href='web_libraries/c3-0.7.17/c3.css' rel='stylesheet'>
+	<script src='web_libraries/jquery.min.js'></script>
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src='web_libraries/c3-0.7.17/c3.js'></script>
+        </head>
+	<body>
+		<div id="chart">
+		</div>
+	</body>
+	<script type = "text/javascript">
+	var chart = c3.generate({
+    data: {
+	url: 'https://puppetlabs.github.io/community_management/pr_work_done.csv'
+    }
+});
+	</script>
 </html>
